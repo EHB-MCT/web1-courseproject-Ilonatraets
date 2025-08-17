@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="stylesheetw.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaardigheden</title>
+  </head>
+  <body class="fade-in">
+    <nav class="navbar">
+      <div class="logo">Pikmin Viewer</div>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ervaring.html">Ervaring</a></li>
+        <li><a href="vaardigheden.html">Vaardigheden</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h1>Mijn Vaardigheden</h1>
+      <p class="subtitle">Professionele expertise van Hugo Pikimini</p>
+    </div>
+
+    <div class="content">
+      <div class="skills-container">
+        <div class="skill-card">
+          <img
+            src="fotoa.jpg"
+            alt="Technisch inzicht - Icoon van een brein met circuits"
+            class="skill-icon"
+          />
+          <h3>Technisch Inzicht</h3>
+          <p>Uitgebreide kennis van elektrische systemen en circuitontwerp</p>
+        </div>
+
+        <div class="skill-card">
+          <img
+            src="fotoj.jpg"
+            alt="Projectmanagement - Icoon van een Gantt-diagram"
+            class="skill-icon"
+          />
+          <h3>Projectmanagement</h3>
+          <p>Ervaring in het leiden van complexe energieprojecten</p>
+        </div>
+
+        <div class="skill-card">
+          <img
+            src="fotoa.jpg"
+            alt="Probleemoplossing - Icoon van een puzzel die in elkaar valt"
+            class="skill-icon"
+          />
+          <h3>Probleemoplossing</h3>
+          <p>Creatieve oplossingen voor elektrische uitdagingen</p>
+          <p>
+            100% weerstand tegen elektrische schokken (zelfs na drie koprollen)
+          </p>
+          <p>
+            Snelle verbindingen leggen tussen energiepunten (zonder kabels te
+            laten smelten)
+          </p>
+          <p>
+            Synchronisatie met teams tot 100 Pikmin voor gelijktijdige
+            stroomtoevoer
+          </p>
+          <p>Reparatie van kapotte schakelkasten onder vijandelijke druk</p>
+          <p>Efficiënt verplaatsen van energie over onbegaanbaar terrein</p>
+          <p>
+            In 0.3 seconden een vijandelijke elektrische poort geneutraliseerd
+          </p>
+          <p>Besteed: 0 Pikmin verloren bij hoogspanningsproject</p>
+          <p>Wereldrecord voor "langste continue vonk" (8,4 seconden)</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

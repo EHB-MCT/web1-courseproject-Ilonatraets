@@ -1,0 +1,287 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url("bckgroundc.jpg");
+}
+
+.image-container {
+  display: flex;
+  justify-content: top;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.image-text-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.content-image:hover {
+  transform: scale(1.02);
+}
+
+.chatgpt-img {
+  width: clamp(220px, 25vw, 340px);
+  height: auto;
+  position: absolute;
+  top: 750px;
+  left: 50px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+.chatgpt-text {
+  flex: 1;
+  font-size: 2rem;
+  color: #333;
+  position: absolute;
+  top: 260%;
+}
+
+.chatgpt-img:hover {
+  transform: scale(1.05);
+}
+
+.fotog {
+  width: clamp(220px, 25vw, 340px);
+  height: auto;
+  position: absolute;
+  top: 860px;
+  left: 1300px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+.fotog:hover {
+  transform: scale(1.05);
+}
+
+.fotoc {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  top: 800px;
+  left: 550px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+.fotoc:hover {
+  transform: scale(1.05);
+}
+.fotoe {
+  width: 500;
+  height: 400px;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.fotod {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  top: 1600px;
+  left: 550px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+.fotod:hover {
+  transform: scale(1.05);
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: #c5ef53;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  color: #50cb66;
+  text-align: center;
+}
+
+h2 {
+  position: absolute;
+  top: 240%;
+  font-size: 400%;
+  color: #175722;
+}
+p {
+  position: absolute;
+  top: 400%;
+  font-size: 130%;
+}
+p1 {
+  position: absolute;
+  top: 85%;
+  font-size: 130%;
+  color: #175722;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.content {
+  position: relative;
+  min-height: 500px;
+}
+
+@media (max-width: 600px) {
+  .chatgpt-img {
+    top: 12vh;
+    left: 5vw;
+    width: 60vw;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #38411d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: rgb(93, 142, 99);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #bac5bd;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.page-header {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.animated-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #50cb66;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.animated-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-title span:nth-child(1) {
+  animation-delay: 0s;
+}
+.animated-title span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.animated-title span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.animated-title span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.animated-title span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.animated-title span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a:hover {
+  background-color: #eee;
+}
+
+.menu a:hover {
+  background-color: #eee;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.navbar,
+.page-header {
+  opacity: 1;
+}
